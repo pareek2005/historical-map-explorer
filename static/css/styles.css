@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+.time-filter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 300px;
+}
+
+.time-filter h3 {
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+}
+
+.filter-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.preset-periods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.preset-periods button {
+    padding: 6px 12px;
+    background: #3498db;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.preset-periods button:hover {
+    background: #2980b9;
+}
+
+.historical-popup {
+    max-width: 300px;
+}
+
+.historical-popup h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.historical-popup p {
+    margin: 0 0 8px 0;
+    color: #34495e;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.historical-popup a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.historical-popup a:hover {
+    text-decoration: underline;
+}
+
+.loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
